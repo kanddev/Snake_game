@@ -1,0 +1,58 @@
+<!DOCTYPE html><html>
+    <head><link href="./css/index.css" rel="stylesheet"></head>
+    <body>
+        <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="snake.css" />
+    <script src="snake.js"></script>
+  </head>
+
+  <body>
+    <div class="game-container">
+      <div class="game-header">
+        <h1>🐍 Snake Game</h1>
+        <h5>Dev By [Kang]</h5>
+      </div>
+      
+      <div class="game-info">
+        <div class="controls-info">
+          <h3>How to Play</h3>
+          <div class="key-controls">
+            <div class="key">↑</div>
+            <div class="key">←</div>
+            <div class="key">↓</div>
+            <div class="key">→</div>
+          </div>
+          <p>Use arrow keys to move the snake</p>
+          <p class="tip">🍎 Collect food to grow longer!</p>
+        </div>
+      </div>
+
+      <div class="score-board">
+        <div class="score-item">
+          <span class="score-label">Score:</span>
+          <span id="score" class="score-value">0</span>
+        </div>
+        <div class="score-item">
+          <span class="score-label">High Score:</span>
+          <span id="highScore" class="score-value">0</span>
+        </div>
+      </div>
+
+      <canvas id="board"></canvas>
+
+      <div class="controls">
+        <button id="startBtn" class="game-btn pulse">Start Game</button>
+        <button id="restartBtn" class="game-btn" style="display: none;">Play Again</button>
+      </div>
+    </div>
+  </body>
+</html>
+      <script src="./js/index.js"></script>
+     </body>
+</html>

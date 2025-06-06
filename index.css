@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #fff;
+}
+
+.game-container {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.game-header h1 {
+    text-align: center;
+    color: #4ecca3;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px rgba(78, 204, 163, 0.5);
+}
+.game-header h5{
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.game-info {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.key-controls {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.key {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 2px solid #4ecca3;
+    color: #4ecca3;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    background: rgba(78, 204, 163, 0.1);
+    padding: 1rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.score-item {
+    text-align: center;
+}
+
+.score-label {
+    font-size: 0.8rem;
+    color: #4ecca3;
+}
+
+.score-value {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-left: 1rem;
+}
+
+#board {
+    border: 3px solid #4ecca3;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(78, 204, 163, 0.3);
+}
+
+.game-btn {
+    background: #4ecca3;
+    color: #1a1a2e;
+    border: none;
+    padding: 1rem 2rem;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+
+.game-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(78, 204, 163, 0.4);
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.tip {
+    color: #4ecca3;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .game-container {
+        padding: 1rem;
+    }
+    
+    .game-header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .key {
+        padding: 0.3rem 0.6rem;
+    }
+}
